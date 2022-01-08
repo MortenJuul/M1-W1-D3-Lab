@@ -1,0 +1,250 @@
+/* Header */
+header {
+  width: 100%;
+  min-height: 400px;
+  padding-top: 3em;
+  background: no-repeat lightgray url(Images/dogs-header.jpg);
+  background-size: 100%;
+  background-position: center;
+}
+.main-header {
+  display: inline-flexbox;
+}
+.logo {
+  float: left;
+  position: absolute;
+  margin-top: -4em;
+}
+
+.logo img {
+  width: 200px;
+}
+.main-menu {
+  /* background-color: #fff; */
+  width: fit-content;
+  overflow: hidden;
+  float: right;
+  /* padding-right: 50px; */
+}
+  .main-menu ul li {
+    min-width: 100px;
+    list-style-type: none;
+    display: block;
+    float: left;
+    border-left: solid 2px black;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #093b66;
+  }
+
+  .main-menu ul li:first-of-type {
+    border: none;
+  }
+  .main-menu ul li {
+    text-decoration: none;
+    background-color: #fff;
+  }
+
+  .main-menu ul li:hover {
+    background-color: cornsilk;
+  }
+
+  .main-menu ul .active {
+    background-color: #ccc;
+  }
+/* Content */
+body{
+    background-color:cornsilk;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  margin: 2rem;
+}
+
+h1, h2, h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #093b66;
+}
+
+/* Home page */
+.split {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (min-width: 60em) {
+  .split {
+    flex-direction: row;
+  }
+}
+
+.split > * {
+  flex-basis: 100%;
+}
+
+.split img {
+  width: 50%;
+  padding-left: 25%;
+}
+
+.box {
+  margin: 10px;
+}
+
+.box:first-of-type {
+  border-right: solid 4px #093b66;
+}
+
+/* Table */
+table, th, td{
+  border: #093b66 solid 4px;
+  border-collapse: collapse;
+}
+
+thead, td:first-child {
+  background-color: #ccc;
+  padding: .02em 1em;
+  font-weight: bold;
+  color: #093b66;
+  font-size: large;
+}
+table li {
+  line-height: 1em;
+}
+
+/* Gallery */
+.gallery-wrapper{
+  width: 50%;
+  padding-top: 60px;
+  padding-bottom: 180px;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+div.gallery {
+    display: block;
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+/* Form */
+form{
+  background-color:ivory;
+  width: 340px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+  fieldset {
+    border: #093b66 solid 4px;
+  }
+
+  fieldset legend {
+    padding: 0 1em;
+    font-size: 28px;
+    font-weight: bold;
+    color: #093b66;
+  }
+
+  fieldset label {
+    display: block;
+    padding-top: 1em;
+    padding-bottom: 0.2em;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  fieldset .form-input {
+    width: 300px;
+  }
+
+  fieldset select {
+    font-size: 1.2em;
+  }
+
+  fieldset p {
+    display: inline-block;
+    font-size: 1.2em;
+  }
+
+  fieldset textarea {
+    height: 4em;
+  }
+
+  fieldset input[type="submit"] {
+    display: block;
+    margin-top: 1em;
+    width: 300px;
+    padding: 0.5em;
+    background-color: #093b66;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+/* Footer */
+footer {
+    padding: 2em;
+    background-color: #093b66;
+    color: #fff;
+    clear: both;
+    text-align: center;
+  }
+
+  /* Social Icons */
+  footer #nondisclaimer .social .fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 4px;
+    border-radius: 50%;
+  }
+
+  footer #nondisclaimer .social .fa:hover {
+    opacity: 0.7;
+  }
+
+  footer #nondisclaimer .social .fa-facebook {
+    background: #125688;
+    color: white;
+  }
+
+  footer #nondisclaimer .social .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  footer #nondisclaimer .social .fa-twitter {
+    background: #125688;
+    color: white;
+  }
