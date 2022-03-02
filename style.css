@@ -210,6 +210,115 @@ form{
     font-size: 1.2em;
   }
 
+/* Gallery */
+
+#album {
+  display: grid;
+  grid-template-columns: 100%;
+  width: 80%;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+@media (min-width: 55em){
+  #album {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+
+#album .gallery {
+  position: relative;
+  display: block;
+  margin: 0 15px;
+  float: left;
+  width: auto;
+}
+
+#album .gallery img {
+  width: 100%;
+  height: auto;
+}
+
+#album .caption {
+  text-align: center;
+  padding: 16px 0;
+  background-color: rgb(255, 245, 238);
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(129, 141, 179);
+  margin-bottom: 10px;
+}
+
+#album .gallery:hover .title {
+  text-align: center;
+  padding: 1em 1.5em;
+  background-color: rgba(255, 245, 238, .75);
+  font-size: 18px;
+  font-weight: 580;
+  text-transform: capitalize;
+  opacity: 1;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+#album .title {
+  position: absolute;
+  top: calc(75% - 34px);
+  left: 40%;
+  opacity: 0;
+}
+
+#card {
+  position: fixed;
+  display: none;
+  width: 400px;
+  height: fit-content;
+  padding-bottom: 20px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, .75);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: ease 0.2s;
+  border-radius: 20px;
+}
+
+#card:hover{
+  width: 420px;   
+  padding: 20px 0;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+#card #card-title {
+  margin: 10%;
+  font-size: 22px;
+  color: white;
+}
+
+#card #card-text {
+  margin: 10%;
+  color: white;
+}
+
+#card #card-exit {
+  right: 0;
+  left: 0;
+  margin: auto;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 /* Footer */
 footer {
     padding: 2em;

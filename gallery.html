@@ -25,7 +25,18 @@
         </header>
         <main>
           <h1>Dogs available for adoption</h1>
-          <div class="gallery-wrapper">
+
+          <ul id="album">
+          
+        </ul>
+
+        <div id="card" onblur="closeCard()">
+            <div id="card-title"></div>
+            <div id="card-text"></div>
+            <div id="card-exit" onclick="closeCard()">Click This To Close</div>
+        </div>
+
+          <!-- <div class="gallery-wrapper">
               <div class="gallery">
                   <a target="_blank" href="Images/dog1.jpg">
                     <img src="Images/dog1.jpg" alt="dog1" width="600" height="400">
@@ -53,7 +64,7 @@
                   </a>
                   <div class="desc">Doggy</div>
                 </div>
-            </div>
+            </div> -->
             
         </main>
         <footer>
@@ -73,5 +84,6 @@
             </div>
         </footer>
         </div>
+        <script src="gallery.js"></script>
     </body>
 </html> 
