@@ -32,9 +32,6 @@
                     <input type="email" id="email" name="email" class="form-input">
                     <label for="phone">Enter your phone</label>
                     <input type="text" id="phone" name="phone" class="form-input">
-                    <label for="contact-method">How should we contact you?</label>
-                    <input type="radio" name="contact-method" id="contact-email" value="email"><p>Email</p>
-                    <input type="radio" name="contact-method" id="contact-phone" value="phone"><p>Phone</p>
                     <label for="dog-select">Which dog are you inquiring?</label>
                     <select name="dog-select" id="dog-select" class="form-input">
                         <option value="Poodle">Poodle</option>
@@ -42,6 +39,16 @@
                         <option value="St Bernard">St Bernard</option>
                         <option value="Labrador">Labrador</option>
                     </select>
+                    
+                    <label for="contact-method">How should we contact you?</label>
+                    <select name="contactMethod" id="contactMethod">
+                        <option value="Email">Email</option>
+                        <option value="Phone">Phone</option>
+                    </select>
+                    <label id="contactLabel" for="contactInput">Email</label>
+                    <input type="text" name="contactInput" id="contactInput">
+
+                    <!-- <input type="radio" name="contact-method" id="contact-phone" value="phone"><p>Phone</p> -->
                     <label for="attribution">How did you hear about us:</label>
                     <textarea name="attribution" id="attribution" class="form-input"></textarea>
                     <input type="submit" value="Submit">
@@ -65,5 +72,15 @@
             </div>
         </footer>
         </div>
+        <script>
+            let val = document.getElementById("contactMethod");
+            let inp = document.getElementById("contactLabel");
+            val.addEventListener("change", contactFnc);
+            
+            function contactFnc() {
+                inp.innerHTML = val.value;   
+            }
+
+        </script>
     </body>
 </html> 

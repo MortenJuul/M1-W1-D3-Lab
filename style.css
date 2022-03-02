@@ -188,6 +188,7 @@ form{
 
   fieldset select {
     font-size: 1.2em;
+    margin-bottom: 1em;
   }
 
   fieldset p {
